@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShahdShope.PL.props" />
+</Project>

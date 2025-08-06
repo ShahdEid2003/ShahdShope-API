@@ -1,0 +1,14 @@
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\bin\Debug\net8.0\ShahdShope.DAL.deps.json
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\bin\Debug\net8.0\ShahdShope.DAL.runtimeconfig.json
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\bin\Debug\net8.0\ShahdShope.DAL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\bin\Debug\net8.0\ShahdShope.DAL.pdb
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.AssemblyInfo.cs
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\refint\ShahdShope.DAL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.pdb
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.genruntimeconfig.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ref\ShahdShope.DAL.dll

@@ -1,0 +1,15 @@
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\bin\Debug\net8.0\ShahdShope.BLL.deps.json
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\bin\Debug\net8.0\ShahdShope.BLL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\bin\Debug\net8.0\ShahdShope.BLL.pdb
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\bin\Debug\net8.0\ShahdShope.DAL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\bin\Debug\net8.0\ShahdShope.DAL.pdb
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.AssemblyInfoInputs.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.AssemblyInfo.cs
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdSho.5CB66C09.Up2Date
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\refint\ShahdShope.BLL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.pdb
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ref\ShahdShope.BLL.dll

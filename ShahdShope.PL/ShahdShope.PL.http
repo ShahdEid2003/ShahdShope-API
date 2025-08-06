@@ -1,0 +1,6 @@
+@ShahdShope.PL_HostAddress = http://localhost:5255
+
+GET {{ShahdShope.PL_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
