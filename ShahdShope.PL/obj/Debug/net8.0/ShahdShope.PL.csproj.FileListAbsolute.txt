@@ -170,3 +170,6 @@ C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debu
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\ShahdShope.PL.pdb
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\ShahdShope.PL.genruntimeconfig.cache
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\ref\ShahdShope.PL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\ShahdShope.PL.sourcelink.json
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Mapster.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Mapster.Core.dll

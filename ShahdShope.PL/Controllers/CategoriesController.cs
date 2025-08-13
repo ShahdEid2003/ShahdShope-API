@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShahdShope.BLL.Services;
+using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.Data;
 using ShahdShope.DAL.DTO.Requests;
 
@@ -10,22 +10,22 @@ namespace ShahdShope.PL.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoryService categoryService;
+        private readonly ICategoryService _categoryService;
 
         public CategoriesController(ICategoryService categoryService)
         {
-            this.categoryService = categoryService;
+            this._categoryService = categoryService;
         }
 
         [HttpGet("")]
         public IActionResult GetAll()
         {
-            return Ok(categoryService.GetAllCategories());
+            return Ok(_categoryService.GetAll());
         }
         [HttpGet("{id}")]
         public IActionResult GetById([FromRoute] int id)
         {
-            var category = categoryService.GetCategoryById(id);
+            var category = _categoryService.GetById(id);
             if (category == null)
             {
                 return NotFound();
@@ -36,25 +36,25 @@ namespace ShahdShope.PL.Controllers
 
         public IActionResult Create([FromBody] CategoryRequest request)
         {
-            var id = categoryService.CreateCategory(request);
-            return CreatedAtAction(nameof(GetById), new { id });
+            var id = _categoryService.Create(request);
+            return CreatedAtAction(nameof(GetById), new { id },new {message="ok"});
         }
-        [HttpPatch("{Id}")]
-        public IActionResult Update([FromRoute] int Id, [FromBody] CategoryRequest request)
+        [HttpPatch("{id}")]
+        public IActionResult Update([FromRoute] int id, [FromBody] CategoryRequest request)
         {
-            var update = categoryService.UpdateCategory(Id, request);
+            var update = _categoryService.Update(id, request);
             return update > 0 ? Ok() : NotFound();
         }
         [HttpPatch("ToggleStatus/{id}")]
         public IActionResult ToggleStatus([FromRoute] int id)
         {
-            var updated = categoryService.ToggleStatus(id);
+            var updated = _categoryService.ToggleStatus(id);
             return updated ? Ok(new { message = "status toggled" }) : NotFound(new { message = "category not found" });
         }
         [HttpDelete("Id")]
         public IActionResult Delete(int id)
         {
-            var deleted = categoryService.DeleteCategory(id);
+            var deleted = _categoryService.Delete(id);
             return deleted > 0 ? Ok() : NotFound();
         }
 

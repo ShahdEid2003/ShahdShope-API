@@ -13,3 +13,4 @@ C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Deb
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\refint\ShahdShope.BLL.dll
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.pdb
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ref\ShahdShope.BLL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\obj\Debug\net8.0\ShahdShope.BLL.sourcelink.json

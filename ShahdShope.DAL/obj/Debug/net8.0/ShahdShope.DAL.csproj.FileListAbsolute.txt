@@ -12,3 +12,4 @@ C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Deb
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.pdb
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.genruntimeconfig.cache
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ref\ShahdShope.DAL.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.DAL\obj\Debug\net8.0\ShahdShope.DAL.sourcelink.json

@@ -1,9 +1,11 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using ShahdShope.BLL.Services;
+using ShahdShope.BLL.Services.classes;
+using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.Data;
-using ShahdShope.DAL.Repositories;
+using ShahdShope.DAL.Repositories.classes;
+using ShahdShope.DAL.Repositories.interfaces;
 
 namespace ShahdShope.PL
 {
@@ -22,6 +24,8 @@ namespace ShahdShope.PL
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<IBrandService, BrandService>();
+            builder.Services.AddScoped<IBrandRepository, BrandRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
