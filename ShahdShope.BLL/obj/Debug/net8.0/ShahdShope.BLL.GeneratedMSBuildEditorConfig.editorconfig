@@ -11,3 +11,5 @@ build_property.RootNamespace = ShahdShope.BLL
 build_property.ProjectDir = C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.BLL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 

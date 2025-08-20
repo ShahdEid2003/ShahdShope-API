@@ -1,17 +1,20 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using ShahdShope.BLL.Services.classes;
 using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.Data;
+using ShahdShope.DAL.Models;
 using ShahdShope.DAL.Repositories.classes;
 using ShahdShope.DAL.Repositories.interfaces;
+using ShahdShope.DAL.Utils;
 
 namespace ShahdShope.PL
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +29,8 @@ namespace ShahdShope.PL
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
+            builder.Services.AddScoped<ISeedData, SeedData>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -34,6 +39,11 @@ namespace ShahdShope.PL
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            var scope = app.Services.CreateScope();
+            var objectOfSeedData = scope.ServiceProvider.GetRequiredService<ISeedData>();
+            await objectOfSeedData.DataSeedingAsync();
+            await objectOfSeedData.IdentityDataSeedingAsync();
+();
 
             app.UseHttpsRedirection();
 
