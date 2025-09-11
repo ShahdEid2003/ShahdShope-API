@@ -1,5 +1,4 @@
-
-using E_commerceAPI.Utils;
+using ShahdShope.PL.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -37,7 +36,7 @@ namespace ShahdShope.PL
             builder.Services.AddScoped<ISeedData, SeedData>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddScoped<IEmailSender, EmailSetting>();
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -55,16 +54,16 @@ namespace ShahdShope.PL
               IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetSection("JWTOptions")["SecretKey"]))
           };
       });
-            //builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-            //{
-            //    options.Password.RequireNonAlphanumeric = false;
-            //    options.Password.RequireLowercase = true;
-            //    options.Password.RequiredLength = 10;
-            //    options.Password.RequireUppercase = true;
-            //    options.Password.RequireDigit = true;
-            //    options.User.RequireUniqueEmail = true;
-            //})
-            //    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = true;
+                options.Password.RequiredLength = 10;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireDigit = true;
+                options.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -80,7 +79,7 @@ namespace ShahdShope.PL
 
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
