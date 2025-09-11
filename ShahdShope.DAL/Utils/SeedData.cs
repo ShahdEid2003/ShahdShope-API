@@ -65,21 +65,24 @@ namespace ShahdShope.DAL.Utils
                     Email = "shahd@gmail.com",
                     FullName = "Shahd Eid",
                     PhoneNumber = "0599372949",
-                    UserName = "shahd"
+                    UserName = "shahd",
+                    EmailConfirmed = true
                 };
                 var user2 = new ApplicationUser()
                 {
                     Email = "Taher@gmail.com",
                     FullName = "Taher Eid",
                     PhoneNumber = "0539372949",
-                    UserName = "Taher"
+                    UserName = "Taher",
+                    EmailConfirmed = true
                 };
                 var user3 = new ApplicationUser()
                 {
                     Email = "Lama@gmail.com",
                     FullName = "Lama Eid",
                     PhoneNumber = "0595372949",
-                    UserName = "Lama"
+                    UserName = "Lama",
+                    EmailConfirmed = true
                 };
                 await _userManager.CreateAsync(user1,"Pass@1212");
                 await _userManager.CreateAsync(user2, "Pass@1212");

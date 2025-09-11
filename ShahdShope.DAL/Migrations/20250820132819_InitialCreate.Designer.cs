@@ -9,11 +9,11 @@ using ShahdShope.DAL.Data;
 
 #nullable disable
 
-namespace ShahdShope.DAL.Data.Migrations
+namespace ShahdShope.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250820104216_Identity")]
-    partial class Identity
+    [Migration("20250820132819_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,7 +76,6 @@ namespace ShahdShope.DAL.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -121,7 +120,6 @@ namespace ShahdShope.DAL.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Street")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")

@@ -9,7 +9,7 @@ namespace ShahdShope.DAL.Models
     public enum Status
     {
         Active = 1,
-        Inactive = 0,
+        Inactive = 2,
     }
 
     public class BaseModel

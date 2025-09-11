@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.DTO.Requests;
 
 namespace ShahdShope.PL.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
+    [Authorize]
     public class BrandsController : ControllerBase
     {
         private readonly IBrandService _brandService;
@@ -14,6 +18,7 @@ namespace ShahdShope.PL.Controllers
         }
 
         [HttpGet("")]
+        
         public IActionResult GetAll()
         {
             return Ok(_brandService.GetAll());

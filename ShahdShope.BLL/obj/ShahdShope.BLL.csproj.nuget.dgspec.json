@@ -54,9 +54,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
             "Mapster": {
               "target": "Package",
               "version": "[7.4.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             }
           },
           "imports": [

@@ -37,9 +37,13 @@ namespace ShahdShope.BLL.Services.classes
             return _repository.Remove(entity);
         }
 
-        public IEnumerable<TResponse> GetAll()
+        public IEnumerable<TResponse> GetAll( bool onlyActive = false)
         {
             var entities = _repository.GetAll();
+            if (onlyActive)
+            {
+                entities = entities.Where(e => e.Status == Status.Active);
+            }
             return entities.Adapt<IEnumerable<TResponse>>();
         }
 

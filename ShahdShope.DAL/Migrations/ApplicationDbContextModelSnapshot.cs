@@ -8,7 +8,7 @@ using ShahdShope.DAL.Data;
 
 #nullable disable
 
-namespace ShahdShope.DAL.Data.Migrations
+namespace ShahdShope.DAL.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -73,7 +73,6 @@ namespace ShahdShope.DAL.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
@@ -118,7 +117,6 @@ namespace ShahdShope.DAL.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Street")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
