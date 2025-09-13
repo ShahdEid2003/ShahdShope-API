@@ -9,11 +9,11 @@ namespace ShahdShope.PL.Areas.Customer.Controllers
     [ApiController]
     [Area("Customer")]
     [Authorize(Roles = "Customer")]
-    public class BrandController : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly IBrandService _brandServices;
 
-        public BrandController(IBrandService brandServices)
+        public BrandsController(IBrandService brandServices)
         {
             _brandServices = brandServices;
         }
@@ -32,4 +32,4 @@ namespace ShahdShope.PL.Areas.Customer.Controllers
             return Ok(brand);
         }
     }
-    }
+}

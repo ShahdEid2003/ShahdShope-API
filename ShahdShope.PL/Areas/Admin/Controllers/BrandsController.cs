@@ -2,11 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.DTO.Requests;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using ShahdShope.BLL.Services.interfaces;
-using ShahdShope.DAL.DTO.Requests;
+
 
 namespace ShahdShope.PL.Areas.Admin.Controllers
 {

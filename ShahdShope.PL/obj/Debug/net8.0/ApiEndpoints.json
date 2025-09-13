@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "ShahdShope.PL.Controllers.BrandsController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
     "Method": "GetAll",
-    "RelativePath": "",
+    "RelativePath": "api/Admin/Brands",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,9 +10,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.BrandsController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
+    "Method": "Create",
+    "RelativePath": "api/Admin/Brands",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.BrandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
     "Method": "GetById",
-    "RelativePath": "{id}",
+    "RelativePath": "api/Admin/Brands/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -26,9 +42,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.BrandsController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
     "Method": "Update",
-    "RelativePath": "{id}",
+    "RelativePath": "api/Admin/Brands/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -47,9 +63,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
+    "Method": "Delete",
+    "RelativePath": "api/Admin/Brands/Id",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
+    "Method": "ToggleStatus",
+    "RelativePath": "api/Admin/Brands/ToggleStatus/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "GetAll",
-    "RelativePath": "api/Categories",
+    "RelativePath": "api/Admin/Category",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -57,9 +105,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "Create",
-    "RelativePath": "api/Categories",
+    "RelativePath": "api/Admin/Category",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -73,9 +121,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "GetById",
-    "RelativePath": "api/Categories/{id}",
+    "RelativePath": "api/Admin/Category/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -89,15 +137,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "Update",
-    "RelativePath": "api/Categories/{id}",
+    "RelativePath": "api/Admin/Category/{Id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "Id",
         "Type": "System.Int32",
         "IsRequired": true
       },
@@ -110,9 +158,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "Delete",
-    "RelativePath": "api/Categories/Id",
+    "RelativePath": "api/Admin/Category/{Id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -120,15 +168,15 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.CategoriesController",
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.CategoryController",
     "Method": "ToggleStatus",
-    "RelativePath": "api/Categories/ToggleStatus/{id}",
+    "RelativePath": "api/Admin/Category/ToggleStatus/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -142,26 +190,20 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.BrandsController",
-    "Method": "Delete",
-    "RelativePath": "Id",
-    "HttpMethod": "DELETE",
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.BrandsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Customer/Brands",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ShahdShope.PL.Controllers.BrandsController",
-    "Method": "ToggleStatus",
-    "RelativePath": "ToggleStatus/{id}",
-    "HttpMethod": "PATCH",
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.BrandsController",
+    "Method": "GetById",
+    "RelativePath": "api/Customer/Brands/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -172,5 +214,166 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/Customer/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CategoryController",
+    "Method": "GetById",
+    "RelativePath": "api/Customer/Category/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Identity.Controllers.AccountController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Identity/Account/ConfirmEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Identity.Controllers.AccountController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/Identity/Account/ForgetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.ForgetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Identity.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Identity/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ShahdShope.DAL.DTO.Responses.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Identity.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Identity/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.RegisterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ShahdShope.DAL.DTO.Responses.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Identity.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Identity/Account/ResetPassword",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

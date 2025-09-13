@@ -181,3 +181,8 @@ C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debu
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\ShahdShope.PL.staticwebassets.runtime.json
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll

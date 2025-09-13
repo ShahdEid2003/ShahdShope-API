@@ -19,9 +19,9 @@ namespace ShahdShope.PL.Areas.Identity.Controllers
         }
         [HttpPost("Register")]
 
-        public async Task<ActionResult<UserResponse>>Register(RegisterRequest request)
+        public async Task<ActionResult<UserResponse>> Register(RegisterRequest request)
         {
-            var result=await _authenticationService.RegisterAsync(request);
+            var result = await _authenticationService.RegisterAsync(request);
             return Ok(result);
         }
         [HttpPost("Login")]
@@ -51,4 +51,3 @@ namespace ShahdShope.PL.Areas.Identity.Controllers
 
     }
 }
- 
