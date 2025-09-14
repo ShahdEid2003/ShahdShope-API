@@ -32,7 +32,10 @@ namespace ShahdShope.PL
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
+            builder.Services.AddScoped<IProducttService, ProductService>();
+            builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ISeedData, SeedData>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddScoped<IEmailSender, EmailSetting>();
@@ -58,7 +61,7 @@ namespace ShahdShope.PL
             {
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = true;
-                options.Password.RequiredLength = 10;
+                options.Password.RequiredLength = 8;
                 options.Password.RequireUppercase = true;
                 options.Password.RequireDigit = true;
                 options.User.RequireUniqueEmail = true;
@@ -82,7 +85,7 @@ namespace ShahdShope.PL
             app.UseAuthentication();
             app.UseAuthorization();
 
-
+            app.UseStaticFiles();
             app.MapControllers();
 
             app.Run();

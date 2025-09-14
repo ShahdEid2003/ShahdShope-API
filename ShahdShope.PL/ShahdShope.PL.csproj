@@ -21,4 +21,8 @@
     <ProjectReference Include="..\ShahdShope.BLL\ShahdShope.BLL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
 </Project>

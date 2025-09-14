@@ -12,9 +12,9 @@ namespace ShahdShope.PL.Areas.Customer.Controllers
     [Authorize(Roles = "Customer")]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryService _categoryServiece;
+        private readonly IProductService _categoryServiece;
 
-        public CategoryController(ICategoryService categoryServiece)
+        public CategoryController(IProductService categoryServiece)
         {
             _categoryServiece = categoryServiece;
         }
