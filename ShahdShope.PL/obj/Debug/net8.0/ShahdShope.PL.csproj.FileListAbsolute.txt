@@ -186,3 +186,4 @@ C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debu
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\user\Documents\Full Stack\BackEnd\API\ShahdShope\ShahdShope.PL\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll

@@ -11,7 +11,7 @@ namespace ShahdShope.BLL.Services.interfaces
 {
     public interface IBrandService : IGenericService<BrandRequest, BrandResponse, Brand>
     {
-
+        Task<int> CreateFile(BrandRequest request);
     }
 }
 

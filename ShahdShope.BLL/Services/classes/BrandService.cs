@@ -1,4 +1,5 @@
-﻿using ShahdShope.BLL.Services.interfaces;
+﻿using Mapster;
+using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.DTO.Requests;
 using ShahdShope.DAL.DTO.Responses;
 using ShahdShope.DAL.Models;
@@ -13,6 +14,26 @@ namespace ShahdShope.BLL.Services.classes
 {
     public class BrandService :GenericService<BrandRequest,BrandResponse, Brand>,IBrandService
     {
-         public BrandService(IBrandRepository Repository) : base(Repository){}
+        private readonly IBrandRepository _brandRepository;
+        private readonly IFileService _fileService;
+
+        public BrandService(IBrandRepository brandRepository, IFileService fileService) : base(brandRepository)
+        {
+            _brandRepository = brandRepository;
+            _fileService = fileService;
+        }
+
+        public async Task<int> CreateFile(BrandRequest request)
+        {
+            var entity = request.Adapt<Brand>();
+            entity.CreatedAt = DateTime.UtcNow;
+            if (entity.ImageMain != null)
+            {
+                var imagePath = await _fileService.UplodeAsync(request.ImageMain);
+                entity.ImageMain = imagePath;
+            }
+            return _brandRepository.Add(entity);
+        }
+
     }
 }

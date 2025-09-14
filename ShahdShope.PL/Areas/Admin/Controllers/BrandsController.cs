@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using ShahdShope.BLL.Services.classes;
 using ShahdShope.BLL.Services.interfaces;
 using ShahdShope.DAL.DTO.Requests;
 
@@ -36,13 +37,13 @@ namespace ShahdShope.PL.Areas.Admin.Controllers
             }
             return Ok(brand);
         }
-        [HttpPost]
-
-        public IActionResult Create([FromBody] BrandRequest request)
+        [HttpPost("Create")]
+        public async Task<ActionResult> Create([FromForm] BrandRequest request)
         {
-            var id = _brandService.Create(request);
-            return CreatedAtAction(nameof(GetById), new { id }, new { message = "ok" });
+            var result = await _brandService.CreateFile(request);
+            return Ok(result);
         }
+
         [HttpPatch("{id}")]
         public IActionResult Update([FromRoute] int id, [FromBody] BrandRequest request)
         {
