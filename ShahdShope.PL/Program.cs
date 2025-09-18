@@ -1,4 +1,3 @@
-using ShahdShope.PL.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
@@ -12,6 +11,8 @@ using ShahdShope.DAL.Models;
 using ShahdShope.DAL.Repositories.classes;
 using ShahdShope.DAL.Repositories.interfaces;
 using ShahdShope.DAL.Utils;
+using ShahdShope.PL.Utils;
+using Stripe;
 using System.Text;
 
 namespace ShahdShope.PL
@@ -30,8 +31,10 @@ namespace ShahdShope.PL
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+            builder.Services.AddScoped<ICartRepository, CartRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
+            builder.Services.AddScoped<ICartService, CartService>();
             builder.Services.AddScoped<IProducttService, ProductService>();
             builder.Services.AddScoped<IFileService, FileService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
@@ -67,6 +70,10 @@ namespace ShahdShope.PL
                 options.User.RequireUniqueEmail = true;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"]; 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
