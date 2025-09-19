@@ -1,4 +1,5 @@
-﻿using ShahdShope.DAL.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using ShahdShope.DAL.Data;
 using ShahdShope.DAL.Models;
 using ShahdShope.DAL.Repositories.interfaces;
 using System;
@@ -11,8 +12,31 @@ namespace ShahdShope.DAL.Repositories.classes
 {
     public class ProductRepository : GenereicRepository<Product>, IProductRepository
     {
+        private readonly ApplicationDbContext _context;
         public ProductRepository(ApplicationDbContext context) : base(context)
         {
+            _context = context;
+        }
+        public async Task DecreaseQuantity(List<(int productId, int quantity)> items)
+        {
+            var productItems = items.Select(i => i.productId).ToList();
+            var products = await _context.Products.Where(p => productItems.Contains(p.Id)).ToListAsync();
+
+            foreach (var item in items)
+            {
+                var product = products.FirstOrDefault(p => p.Id == item.productId);
+                if (product == null)
+                {
+                    throw new Exception($"Product with ID {item.productId} not found.");
+                }
+                if (product.Quantity < item.quantity)
+                {
+                    throw new Exception($"Not enough stock available for product ID {item.productId}.");
+                }
+                product.Quantity -= item.quantity;
+                await _context.SaveChangesAsync();
+            }
+
 
         }
 

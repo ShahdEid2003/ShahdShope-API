@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -51,7 +52,7 @@ namespace ShahdShope.BLL.Services.classes
         }
 
 
-        public async Task<UserResponse> RegisterAsync(RegisterRequest request)
+        public async Task<UserResponse> RegisterAsync(RegisterRequest request ,HttpRequest httpRequest)
         {
             var user = new ApplicationUser
             {
@@ -66,7 +67,7 @@ namespace ShahdShope.BLL.Services.classes
             {
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 var escapeToken = Uri.EscapeDataString(token);
-                var emailUrl = $"https://localhost:7023/api/identity/Account/ConfirmEmail?token={escapeToken}&userId={user.Id}";
+                var emailUrl = $"{httpRequest.Scheme}://{httpRequest.Host}/api/identity/Account/ConfirmEmail?token={escapeToken}&userId={user.Id}";
                 await _emailSender.SendEmailAsync(user.Email, "Confirm Email",
                     $"<h1>Welcome {user.FullName}</h1>" +
                     $"<a href='{emailUrl}'> confirm </a>");

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShahdShope.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb437cef1ad0c5f503a59e839b67d5402847c086")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10d9044e71ba583251bbdfb57911a988b8e6ede3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShahdShope.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShahdShope.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

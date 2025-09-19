@@ -32,11 +32,14 @@ namespace ShahdShope.PL
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
+            builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+            builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<ICartService, CartService>();
-            builder.Services.AddScoped<IProducttService, ProductService>();
-            builder.Services.AddScoped<IFileService, FileService>();
+            //builder.Services.AddScoped<ICheckOutService, CheckOutService>();
+            builder.Services.AddScoped<IProducttService,BLL.Services.classes.ProductService>();
+            builder.Services.AddScoped<IFileService, BLL.Services.classes.FileService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ISeedData, SeedData>();
@@ -71,7 +74,8 @@ namespace ShahdShope.PL
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
-            
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+            StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
             var app = builder.Build();
 
