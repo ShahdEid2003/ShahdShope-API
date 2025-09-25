@@ -94,7 +94,7 @@ namespace ShahdShope.BLL.Services.classes
                              },
                              Quantity = item.Count,
                          }
-                         );
+                    );
 
                 }
                 var service = new SessionService();
@@ -145,7 +145,7 @@ namespace ShahdShope.BLL.Services.classes
                     productItems.Add((cartItem.ProductId, cartItem.Count));
 
                 }
-                // orderItem لحتى اعمل ريكوست مره وحدة بدل ما اعمل ريكوست كل  
+                
                 await _orderItemRepository.AddRangeAsync(orderItems);
                 await _cartRepository.ClearCart(order.UserId);
                 await _productRepository.DecreaseQuantity(productItems);

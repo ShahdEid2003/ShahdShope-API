@@ -30,7 +30,7 @@ namespace ShahdShope.PL.Areas.Customer.Controllers
             return response.Success ? Ok(response) : BadRequest(response);
         }
 
-        [HttpGet("success/{orderId}")]
+        [HttpGet("Success/{orderId}")]
         [AllowAnonymous]
         public async Task<IActionResult> Success([FromRoute] int orderId)
         {
