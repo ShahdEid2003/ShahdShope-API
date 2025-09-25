@@ -41,9 +41,9 @@ namespace ShahdShope.DAL.Utils
             if (!await _context.Brands.AnyAsync())
             {
                 await _context.Brands.AddRangeAsync(
-                    new Brand { Name = "Samsung" },
-                    new Brand { Name = "Apple" },
-                    new Brand { Name = "Nike" }
+                    new Brand { Name = "Samsung",ImageMain="samsung.png" },
+                    new Brand { Name = "Apple", ImageMain="Apple.png" },
+                    new Brand { Name = "Nike" ,ImageMain="Nike.png"}
                 );
              
             }

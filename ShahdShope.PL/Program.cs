@@ -37,7 +37,7 @@ namespace ShahdShope.PL
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<IBrandService, BrandService>();
             builder.Services.AddScoped<ICartService, CartService>();
-            //builder.Services.AddScoped<ICheckOutService, CheckOutService>();
+            builder.Services.AddScoped<ICheckOutService, CheckOutService>();
             builder.Services.AddScoped<IProducttService,BLL.Services.classes.ProductService>();
             builder.Services.AddScoped<IFileService, BLL.Services.classes.FileService>();
             builder.Services.AddScoped<IBrandRepository, BrandRepository>();
@@ -65,12 +65,16 @@ namespace ShahdShope.PL
       });
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireLowercase = true;
                 options.Password.RequiredLength = 8;
-                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
                 options.User.RequireUniqueEmail = true;
+                options.SignIn.RequireConfirmedEmail = true;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 

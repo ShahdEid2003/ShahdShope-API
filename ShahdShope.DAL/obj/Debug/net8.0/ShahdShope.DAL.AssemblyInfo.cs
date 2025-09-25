@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShahdShope.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10d9044e71ba583251bbdfb57911a988b8e6ede3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27bbc7de9703177781f7b38d72bcb76e64a7392b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShahdShope.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShahdShope.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

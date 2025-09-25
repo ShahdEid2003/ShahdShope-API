@@ -9,7 +9,7 @@ namespace ShahdShope.DAL.DTO.Responses
     public class CheckoutResponse
     {
         public bool Success { get; set; }
-        public string Message { get; set; }
+        public required string Message { get; set; }
         public string? Url { get; set; }
         public string? PaymentId { get; set; }
     }

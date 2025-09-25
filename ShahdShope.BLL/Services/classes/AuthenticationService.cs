@@ -19,15 +19,19 @@ namespace ShahdShope.BLL.Services.classes
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
         private readonly IEmailSender _emailSender;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+
 
         public AuthenticationService(UserManager<ApplicationUser> userManager,
                                        IConfiguration configuration,
+                                       SignInManager<ApplicationUser> signInManager,
                                       IEmailSender emailSender)
         {
 
             _userManager = userManager;
             _configuration = configuration;
             _emailSender = emailSender;
+            _signInManager = signInManager;
         }
         public async Task<UserResponse> LoginAsync(LoginRequest request)
         {
@@ -36,19 +40,26 @@ namespace ShahdShope.BLL.Services.classes
             {
                 throw new Exception("invalid password or Email");
             }
-            if (!await _userManager.IsEmailConfirmedAsync(user))
+            var result = await _signInManager.CheckPasswordSignInAsync(user,request.Password, true);
+            if (result.Succeeded)
             {
-                throw new Exception("Email is not confirmed yet");
+                return new UserResponse
+                {
+                    Token = await CreateToken(user),
+                };
+            } else if(result.IsLockedOut){
+                throw new Exception("Your account is locked");
             }
-            var isPassValid = await _userManager.CheckPasswordAsync(user, request.Password);
-            if (!isPassValid)
+            else if (result.IsNotAllowed)
             {
-                throw new Exception("Invalid Password");
+                throw new Exception("please confirm your email");
             }
-            return new UserResponse
+            else
             {
-                Token = await CreateToken(user),
-            };
+                throw new Exception("invaild");
+            }
+           
+          
         }
 
 
@@ -68,6 +79,7 @@ namespace ShahdShope.BLL.Services.classes
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 var escapeToken = Uri.EscapeDataString(token);
                 var emailUrl = $"{httpRequest.Scheme}://{httpRequest.Host}/api/identity/Account/ConfirmEmail?token={escapeToken}&userId={user.Id}";
+                await _userManager.AddToRoleAsync(user, "Customer");
                 await _emailSender.SendEmailAsync(user.Email, "Confirm Email",
                     $"<h1>Welcome {user.FullName}</h1>" +
                     $"<a href='{emailUrl}'> confirm </a>");

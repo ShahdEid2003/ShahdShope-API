@@ -3,52 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|solutionrelative:shahdshope.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\classes\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\classes\\checkoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.pl\\areas\\customer\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|solutionrelative:shahdshope.pl\\areas\\customer\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\interfaces\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\interfaces\\ibrandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\classes\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\classes\\brandservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\utils\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\utils\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\classes\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\classes\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.pl\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|solutionrelative:shahdshope.pl\\areas\\identity\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\interfaces\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\migrations\\20250919143254_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\migrations\\20250919143254_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F02A9FE6-8B71-41D7-B285-4867E6FB0114}|ShahdShope.PL\\ShahdShope.PL.csproj|solutionrelative:shahdshope.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\repositories\\classes\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\repositories\\classes\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\classes\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\classes\\genericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\shahdshope.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\shahdshope.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.bll\\services\\interfaces\\icheckoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB1622F8-F41A-441C-A3AB-8A80F0075E83}|ShahdShope.BLL\\ShahdShope.BLL.csproj|solutionrelative:shahdshope.bll\\services\\interfaces\\icheckoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\dto\\responses\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\dto\\responses\\productresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\dto\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\dto\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|c:\\users\\user\\documents\\full stack\\backend\\api\\shahdshope\\shahdshope.dal\\repositories\\classes\\genereicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D93BB4BF-06AC-4E35-9E93-9D9E862589E1}|ShahdShope.DAL\\ShahdShope.DAL.csproj|solutionrelative:shahdshope.dal\\repositories\\classes\\genereicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,84 +50,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\interfaces\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\IAuthenticationService.cs",
-              "RelativeToolTip": "ShahdShope.BLL\\Services\\interfaces\\IAuthenticationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T15:08:57.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ShahdShope.PL\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ShahdShope.PL\\Areas\\Identity\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T15:06:22.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
-              "RelativeToolTip": "ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T15:00:26.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CheckOutService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\CheckOutService.cs",
               "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\classes\\CheckOutService.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\CheckOutService.cs",
               "RelativeToolTip": "ShahdShope.BLL\\Services\\classes\\CheckOutService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAJAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:49:07.258Z",
+              "WhenOpened": "2025-09-23T20:33:58.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "ShahdShope.DAL\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Models\\Order.cs",
+              "RelativeToolTip": "ShahdShope.DAL\\Models\\Order.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T20:38:15.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Areas\\Customer\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "ShahdShope.PL\\Areas\\Customer\\Controllers\\CheckoutController.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Areas\\Customer\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "ShahdShope.PL\\Areas\\Customer\\Controllers\\CheckoutController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T20:28:15.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "20250919143254_order.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Migrations\\20250919143254_order.cs",
-              "RelativeDocumentMoniker": "ShahdShope.DAL\\Migrations\\20250919143254_order.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Migrations\\20250919143254_order.cs",
-              "RelativeToolTip": "ShahdShope.DAL\\Migrations\\20250919143254_order.cs",
+              "Title": "IBrandService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\IBrandService.cs",
+              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\interfaces\\IBrandService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\IBrandService.cs",
+              "RelativeToolTip": "ShahdShope.BLL\\Services\\interfaces\\IBrandService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:32:55.259Z",
+              "WhenOpened": "2025-09-23T20:23:46.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BrandService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\BrandService.cs",
+              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\classes\\BrandService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\BrandService.cs",
+              "RelativeToolTip": "ShahdShope.BLL\\Services\\classes\\BrandService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T20:21:31.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Utils\\SeedData.cs",
+              "RelativeDocumentMoniker": "ShahdShope.DAL\\Utils\\SeedData.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Utils\\SeedData.cs",
+              "RelativeToolTip": "ShahdShope.DAL\\Utils\\SeedData.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T20:08:15.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Program.cs",
+              "RelativeDocumentMoniker": "ShahdShope.PL\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Program.cs",
+              "RelativeToolTip": "ShahdShope.PL\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswFgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T19:29:51.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ShahdShope.BLL",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\ShahdShope.BLL.csproj",
-              "RelativeDocumentMoniker": "ShahdShope.BLL\\ShahdShope.BLL.csproj",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\ShahdShope.BLL.csproj",
-              "RelativeToolTip": "ShahdShope.BLL\\ShahdShope.BLL.csproj",
+              "Title": "ICheckOutService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
+              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
+              "RelativeToolTip": "ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-19T14:31:03.559Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T10:56:49.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
+              "RelativeToolTip": "ShahdShope.BLL\\Services\\classes\\AuthenticationService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowFEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:04:24.661Z",
               "EditorCaption": ""
             },
             {
@@ -144,80 +175,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GenericService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\GenericService.cs",
-              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\classes\\GenericService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\classes\\GenericService.cs",
-              "RelativeToolTip": "ShahdShope.BLL\\Services\\classes\\GenericService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:30:47.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductResponse.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\DTO\\Responses\\ProductResponse.cs",
-              "RelativeDocumentMoniker": "ShahdShope.DAL\\DTO\\Responses\\ProductResponse.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\DTO\\Responses\\ProductResponse.cs",
-              "RelativeToolTip": "ShahdShope.DAL\\DTO\\Responses\\ProductResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:29:08.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserResponse.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\DTO\\Responses\\UserResponse.cs",
-              "RelativeDocumentMoniker": "ShahdShope.DAL\\DTO\\Responses\\UserResponse.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\DTO\\Responses\\UserResponse.cs",
-              "RelativeToolTip": "ShahdShope.DAL\\DTO\\Responses\\UserResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:29:07.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Program.cs",
-              "RelativeDocumentMoniker": "ShahdShope.PL\\Program.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.PL\\Program.cs",
-              "RelativeToolTip": "ShahdShope.PL\\Program.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAADgvycAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:27:34.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ICheckOutService.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
-              "RelativeDocumentMoniker": "ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
-              "RelativeToolTip": "ShahdShope.BLL\\Services\\interfaces\\ICheckOutService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Title": "GenereicRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Repositories\\classes\\GenereicRepository.cs",
+              "RelativeDocumentMoniker": "ShahdShope.DAL\\Repositories\\classes\\GenereicRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Repositories\\classes\\GenereicRepository.cs",
+              "RelativeToolTip": "ShahdShope.DAL\\Repositories\\classes\\GenereicRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:27:21.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Repositories\\classes\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "ShahdShope.DAL\\Repositories\\classes\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\user\\Documents\\Full Stack\\BackEnd\\API\\ShahdShope\\ShahdShope.DAL\\Repositories\\classes\\OrderRepository.cs",
-              "RelativeToolTip": "ShahdShope.DAL\\Repositories\\classes\\OrderRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwB4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T14:26:44Z",
+              "WhenOpened": "2025-09-23T07:47:22.866Z",
               "EditorCaption": ""
             }
           ]
