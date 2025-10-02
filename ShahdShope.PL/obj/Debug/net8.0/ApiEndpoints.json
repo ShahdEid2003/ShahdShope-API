@@ -11,22 +11,6 @@
   },
   {
     "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
-    "Method": "Create",
-    "RelativePath": "api/Admin/Brands",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ShahdShope.DAL.DTO.Requests.BrandRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
     "Method": "GetById",
     "RelativePath": "api/Admin/Brands/{id}",
     "HttpMethod": "GET",
@@ -58,6 +42,27 @@
         "Name": "request",
         "Type": "ShahdShope.DAL.DTO.Requests.BrandRequest",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.BrandsController",
+    "Method": "Create",
+    "RelativePath": "api/Admin/Brands/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageMain",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -190,6 +195,72 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.ProductsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Admin/Products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Admin.Controllers.ProductsController",
+    "Method": "Create",
+    "RelativePath": "api/Admin/Products/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Discount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rate",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageMain",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "BrandId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.BrandsController",
     "Method": "GetAll",
     "RelativePath": "api/Customer/Brands",
@@ -216,6 +287,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CartController",
+    "Method": "AddCart",
+    "RelativePath": "api/Customer/Cart/AddToCart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.CartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CartController",
+    "Method": "GetUserCart",
+    "RelativePath": "api/Customer/Cart/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CategoryController",
     "Method": "GetAll",
     "RelativePath": "api/Customer/Category",
@@ -235,6 +332,38 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CheckoutController",
+    "Method": "Payment",
+    "RelativePath": "api/Customer/Checkout/payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ShahdShope.DAL.DTO.Requests.CheckoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShahdShope.PL.Areas.Customer.Controllers.CheckoutController",
+    "Method": "Success",
+    "RelativePath": "api/Customer/Checkout/Success/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
         "Type": "System.Int32",
         "IsRequired": true
       }
