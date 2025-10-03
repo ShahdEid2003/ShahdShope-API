@@ -39,6 +39,7 @@ namespace ShahdShope.PL
                     Policy.AllowAnyOrigin();
                 });
             });
+            builder.Services.AddScoped<IReviewRepository, ReviewRepository>();
             builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<ICartRepository, CartRepository>();
@@ -56,6 +57,7 @@ namespace ShahdShope.PL
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IEmailSender, EmailSetting>();
+            builder.Services.AddScoped<IReviewService,BLL.Services.classes.ReviewService>();
             //builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddAuthentication(options =>
             {

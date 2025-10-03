@@ -9,10 +9,14 @@ namespace ShahdShope.DAL.DTO.Responses
 {
     public class ProductResponse
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public int Quantity { get; set; }
         [JsonIgnore]
         public string ImageMain { get; set; }
-        public string ImageMainUrl => $"https://localhost:7023/Images/{ImageMain}";
+        public string ImageMainUrl { get; set; }
+        public List<string> SubImageUrls { get; set; } = new List<string>();
+        public List<ReviewResponse> Reviews { get; set; } = new List<ReviewResponse>();
     }
 }

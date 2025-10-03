@@ -43,5 +43,6 @@ namespace ShahdShope.DAL.Models
   
         public string UserId { get; set; }
         public ApplicationUser User { get; set; }
+        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
 }

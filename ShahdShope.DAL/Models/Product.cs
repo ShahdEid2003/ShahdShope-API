@@ -21,5 +21,8 @@ namespace ShahdShope.DAL.Models
 
         public Category Category { get; set; }
         public Brand? Brand { get; set; }
+     
+        public List<ProductImage> SubImage { get; set; } = new List<ProductImage>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
     }
 }

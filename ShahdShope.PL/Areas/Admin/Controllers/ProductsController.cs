@@ -19,13 +19,16 @@ namespace ShahdShope.PL.Areas.Admin.Controllers
         }
 
         [HttpGet("")]
-        public async Task<ActionResult> GetAll() => Ok(_productServices.GetAll());
+        public IActionResult GetAll([FromQuery] int pageNumbe = 1, [FromQuery] int pageSize = 5)
+        {
+            var products = _productServices.GetAllProduct(Request, false, pageNumbe, pageSize);
+            return Ok(products);
+        }
 
         [HttpPost("Create")]
         public async Task<IActionResult> Create([FromForm] ProductRequest productRequest)
         {
-            // var userId=User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var result = await _productServices.CreateFile(productRequest);
+            var result = await _productServices.CreateProduct(productRequest);
             return Ok(result);
         }
     }

@@ -10,5 +10,6 @@ namespace ShahdShope.BLL.Services.interfaces
     public interface IFileService
     {
         Task<string> UplodeAsync(IFormFile file);
+        Task<List<string>> UplodeManyAsync(List<IFormFile> files);
     }
 }

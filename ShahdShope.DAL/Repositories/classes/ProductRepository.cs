@@ -39,6 +39,10 @@ namespace ShahdShope.DAL.Repositories.classes
 
 
         }
+        public List<Product> GetAllproductWithImage()
+        {
+            return _context.Products.Include(p => p.SubImage).Include(p => p.Reviews).ThenInclude(u => u.User).ToList();
+        }
 
     }
 }

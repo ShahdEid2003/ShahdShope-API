@@ -10,6 +10,7 @@ namespace ShahdShope.DAL.Repositories.interfaces
     public interface IProductRepository : IGenericRepositorry<Product>
     {
         public Task DecreaseQuantity(List<(int productId, int quantity)> items);
+        List<Product> GetAllproductWithImage();
     }
    
 }

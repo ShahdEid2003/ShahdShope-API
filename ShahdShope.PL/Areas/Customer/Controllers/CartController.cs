@@ -11,7 +11,7 @@ namespace ShahdShope.PL.Areas.Customer.Controllers
     [Route("api/[area]/[controller]")]
     [ApiController]
     [Area("Customer")]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Customer")]
+    [Authorize( Roles = "Customer")]
     public class CartController : ControllerBase
     {
         private readonly ICartService _cartService;
