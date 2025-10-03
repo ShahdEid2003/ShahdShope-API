@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.7.2, )"
+            },
             "Stripe.net": {
               "target": "Package",
               "version": "[48.5.0, )"
